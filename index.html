@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator capp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Calculator</h1>
+        <div class="calculator">
+            <input type="text" id="result" class="form-control mb-3" readonly>
+            <div class="row">
+                <div class="col"><button class="btn btn-primary btn-block btn-c bd" id="clear" onclick="clearResult()">C</button></div>
+                <div class="col"><button class="btn btn-danger btn-block bd" onclick="backspace()">←</button></div>
+                <div class="col"><button class="btn btn-primary btn-block bd" onclick="appendToResult('.')">.</button></div>
+                <div class="col"><button class="btn btn-danger btn-block bd" onclick="appendToResult('*')">x</button></div>
+            </div>
+            <div class="row">
+                <div class="col"><button class="btn btn-primary btn-block bd" onclick="appendToResult('7')">7</button></div>
+                <div class="col"><button class="btn btn-primary btn-block bd" onclick="appendToResult('8')">8</button></div>
+                <div class="col"><button class="btn btn-primary btn-block bd" onclick="appendToResult('9')">9</button></div>
+                <div class="col"><button class="btn btn-primary btn-block bd" onclick="appendToResult('/')">/</button></div>
+            </div>
+            <div class="row">
+                <div class="col"><button class="btn btn-primary btn-block bd" onclick="appendToResult('4')">4</button></div>
+                <div class="col"><button class="btn btn-primary btn-block bd" onclick="appendToResult('5')">5</button></div>
+                <div class="col"><button class="btn btn-primary btn-block bd" onclick="appendToResult('6')">6</button></div>
+                <div class="col"><button class="btn btn-primary btn-block bd" id="subtract" onclick="appendToResult('-')">-</button></div>
+            </div>
+            <div class="row">
+                <div class="col"><button class="btn btn-primary btn-block bd" id="1" onclick="appendToResult('1')">1</button></div>
+                <div class="col"><button class="btn btn-primary btn-block bd" id="2" onclick="appendToResult('2')">2</button></div>
+                <div class="col"><button class="btn btn-primary btn-block bd" id="3" onclick="appendToResult('3')">3</button></div>
+                <div class="col"><button class="btn btn-primary btn-block bd" id="add" onclick="appendToResult('+')">+</button></div>
+            </div>
+            <div class="row">
+                <div class="col-3"><button class="btn btn-primary btn-block bd" onclick="appendToResult('0')">0</button></div>
+                <div class="col-3"><button class="btn btn-primary btn-block bd" onclick="appendToResult('00')">00</button></div>
+                <div class="col-6"><button class="btn btn-equal btn-block bd eq" id="equal" onclick="calculate()">=</button></div>
+            </div>
+         </div>
+
+         <p id="description">
+            Welcome to the Infix Calculator! This calculator allows you to perform arithmetic calculations using infix notation. Enter your expression in the input field above, and click on the "Calculate" button to see the result. You can use standard arithmetic operators such as +, -, *, and /, as well as parentheses to specify the order of operations. The result will be displayed below the input field.
+        </p>
+        
+    </div>
+    
+ <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>   
+<script src="script.js"></script>
+<script src="bootstrap.js"></script>
+</body>
+</html>
